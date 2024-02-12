@@ -1,47 +1,11 @@
 {
-  "electrumx1.novoblock.org": {
+  "novo.vn.ekapool.com": {
     "pruning": "-",
     "s": "50012",
     "t": "50010",
     "version": "1.5"
   },
-  "electrumx2.novoblock.org": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "electrumx3.novoblock.org": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "electrumx4.novoblock.org": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "electrumx5.novoblock.org": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "electron-novo.com": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "electrumx.novochain.ovh": {
-    "pruning": "-",
-    "s": "50012",
-    "t": "50010",
-    "version": "1.5"
-  },
-  "nono-electrumx.radiant4people.com": {
+  "novoelectron1.ddns.net": {
     "pruning": "-",
     "s": "50012",
     "t": "50010",
