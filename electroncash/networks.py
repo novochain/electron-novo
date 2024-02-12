@@ -58,7 +58,7 @@ class MainNet(AbstractNet):
     TITLE = 'Electron Novo'
 
     # Novo fork block specification
-    BITCOIN_CASH_FORK_BLOCK_HEIGHT = 478559
+    BITCOIN_CASH_FORK_BLOCK_HEIGHT = 1478559
     BITCOIN_CASH_FORK_BLOCK_HASH = "000000000000000000651ef99cb9fcbe0dadde1d424bd9f15ff20136191a5eec"
 
     # Nov 13. 2017 HF to CW144 DAA height (height of last block mined on old DAA)
