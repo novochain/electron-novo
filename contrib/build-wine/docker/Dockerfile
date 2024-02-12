@@ -39,7 +39,10 @@ COPY winehq.key /tmp
 ENV WINEDIST=devel
 ENV WINEVERSION=7.7~${UBUNTUDIST}-1
 
-RUN echo "78b185fabdb323971d13bd329fefc8038e08559aa51c4996de18db0639a51df6 /tmp/winehq.key" | sha256sum -c - && \
+RUN apt-get update -q && \
+    apt-get install -y curl && \
+    curl -fsSL https://dl.winehq.org/wine-builds/winehq.key -o /tmp/winehq.key && \
+    echo "78b185fabdb323971d13bd329fefc8038e08559aa51c4996de18db0639a51df6 /tmp/winehq.key" | sha256sum -c - || exit 1 && \
     apt-key add /tmp/winehq.key && \
     echo deb https://dl.winehq.org/wine-builds/ubuntu/ ${UBUNTUDIST} main >> /etc/apt/sources.list && \
     apt-get update -q && \
