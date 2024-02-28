@@ -1293,9 +1293,9 @@ class Network(util.DaemonThread):
             if False:
                 interface.blockchain = None
                 interface.set_mode(Interface.MODE_BACKWARD)
-                interface.bad = request_base_height + actual_header_count - 1
+                interface.bad = request_base_height + actual_header_count - 2
                 interface.bad_header = blockchain.HeaderChunk(request_base_height, chunk_data).get_header_at_height(interface.bad)
-                self.request_header(interface, min(interface.tip, interface.bad - 1))
+                self.request_header(interface, min(interface.tip, interface.bad - 2))
             return
         else:
             interface.print_error("discarded bad chunk, height={} count={} reason={}".format(request_base_height, actual_header_count, connect_state))
